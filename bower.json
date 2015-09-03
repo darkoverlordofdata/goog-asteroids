@@ -1,0 +1,39 @@
+{
+  "name": "ashteroids",
+  "version": "0.0.1",
+  "authors": [
+    "darkoverlordofdata@gmail.com"
+  ],
+  "description": "Ash+Asteroids",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "tmp",
+    "build",
+    "node_modules",
+    "packages",
+    "src",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "closure-compiler": "~0.2.7",
+    "google-closure-library": "*"
+  },
+  "dependencies": {
+    "stats.js": "*",
+    "ash.coffee": "git://github.com/darkoverlordofdata/ash.coffee"
+  },
+  "install": {
+    "ignore": [
+      "closure-compiler",
+      "google-closure-library"
+    ],
+    "path": "web/src",
+    "sources": {
+      "ash.coffee": "packages/ash.coffee/build/ash.coffee.js",
+      "stats.js": "packages/stats.js/build/stats.min.js"
+    }
+  }
+}
